@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:text="0/40 test result"
+        android:textSize="40sp"
+        android:textColor="#fe0303"
+        android:gravity="center"
+        android:layout_below="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:background="#aee89b" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/gvResult"
+        android:visibility="visible"
+        android:layout_below="@+id/tvResult"
+        android:numColumns="5"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_ok_button_background"
+            android:text="cancel"
+            android:id="@+id/btnCancel"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/gvResult"
+            android:layout_alignStart="@+id/gvResult"
+            android:padding="3dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_ok_button_background"
+            android:text="Okay"
+            android:id="@+id/btnAnswer"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/gvResult"
+            android:layout_alignStart="@+id/gvResult"
+            android:padding="3dp" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

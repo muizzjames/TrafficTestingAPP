@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="center|left"
+		android:background="#fc0101"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="0dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="0dp"
+		android:id="@+id/linearLayout3">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="MyTrafficTestApp"
+			android:id="@+id/textView"
+			android:layout_marginLeft="15dp"
+			android:textColor="#fffefe" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_below="@+id/linearLayout3"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginTop="50dp"
+		android:id="@+id/linearLayout4">
+
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Total Point:"
+            android:textSize="25sp"
+			android:gravity="center|right"
+            android:textStyle="bold"
+            android:id="@+id/tvTextView"
+			android:textColor="#fa1111" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="4/40"
+			android:id="@+id/tvResultText"
+			android:textColor="#fe0202"
+			android:textSize="23sp"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:padding="5dp"
+		android:layout_marginTop="26dp"
+		android:layout_below="@+id/linearLayout4"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/linearLayout5">
+
+	<Button
+	    android:id="@+id/btnYes"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:text="Correction"
+	    android:background="#3366ff"
+	    android:textColor="#fff"
+	    android:textStyle="bold"    
+	    android:layout_margin="5dp"/>
+
+	<Button
+	    android:id="@+id/btnNo"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:text="Next Level"
+	    android:background="#3366ff"
+	    android:textColor="#fff"
+	    android:textStyle="bold"    
+	    android:layout_margin="5dp" />
+		<Button
+			android:id="@+id/btnShare"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:text="Share"
+			android:background="#3366ff"
+			android:textColor="#fff"
+			android:textStyle="bold"
+			android:layout_margin="5dp" />
+
+		<ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/resultImage"
+			android:src="@drawable/angry" />
+	</LinearLayout>
+	<com.google.android.gms.ads.AdView
+		android:id="@+id/adView"
+		android:layout_width="403dp"
+		android:layout_height="wrap_content"
+		ads:adSize="BANNER"
+		ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true">
+	</com.google.android.gms.ads.AdView>
+</RelativeLayout>
